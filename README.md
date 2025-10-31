@@ -3,7 +3,7 @@
 > Autonomous robot built with Arduino, infrared, and ultrasonic sensors, designed to follow lines and avoid obstacles in real time.  
 > Developed as an educational project focused on embedded systems, automation, and algorithmic control.
 
----
+
 
 ## Overview
 
@@ -12,7 +12,7 @@ The goal is to demonstrate how sensor integration, PWM motor control, and decisi
 
 The source code is divided into modular scripts (`code1`, `code2`, etc.) for different functionalities such as movement, sensors, and logic flow.
 
----
+
 
 ## Features
 
@@ -23,7 +23,7 @@ The source code is divided into modular scripts (`code1`, `code2`, etc.) for dif
 - **Customizable Settings** — Adjust thresholds, speed, and distances  
 - **Educational & Open Source** — Ideal for learning embedded programming and robotics  
 
----
+
 
 ## Hardware Components
 
@@ -37,7 +37,7 @@ The source code is divided into modular scripts (`code1`, `code2`, etc.) for dif
 | **Power Supply (6–12V)** | Battery pack |
 | **Chassis + Wiring** | Robot base and connections |
 
----
+
 
 ## Project Structure
 
@@ -61,7 +61,7 @@ Each code file represents a logical module of the robot, such as:
 - **Main decision logic**
 - **Obstacle avoidance algorithm**
 
----
+
 
 ## Setup & Execution
 
@@ -87,7 +87,7 @@ Ensure correct connections between sensors, motors, and the H-Bridge.
 Place the robot on a surface with a clear line (black over white or vice versa).
 The system will automatically start following the line and respond to nearby obstacles.
 
----
+
 
 ## Configuration
 
@@ -99,7 +99,6 @@ You can modify:
 
 These values can be adjusted in the main script or through defined constants.
 
----
 
 ## Educational Context
 
@@ -110,7 +109,7 @@ Developed as part of a **university robotics and automation study**, this projec
 * Sensor fusion and automation
 * Hardware/software integration
 
----
+
 
 ## Author
 
@@ -120,15 +119,14 @@ Software Developer
 - [github.com/cauerast](https://github.com/cauerast)
 - [linkedin.com/in/cauerast](https://www.linkedin.com/in/cauerast/)
 
----
+
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute it for educational or research purposes.
 
----
+
 
 > *An open-source robotics project combining logic, hardware, and automation for experimentation and learning.*
 
-```
