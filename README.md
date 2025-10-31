@@ -1,67 +1,69 @@
+# Line Follower Robot with Obstacle Avoidance
 
-# 🧭 Robô Seguidor de Linha com Desvio de Obstáculos
+> Autonomous robot built with Arduino, infrared, and ultrasonic sensors, designed to follow lines and avoid obstacles in real time.  
+> Developed as an educational project focused on embedded systems, automation, and algorithmic control.
 
-> Open-source autonomous robot designed to follow lines and avoid obstacles using **Arduino**, **infrared sensors**, and **ultrasonic distance measurement**.  
-> The system applies basic robotics principles such as sensor fusion, PWM motor control, and obstacle detection logic.
+---
 
+## Overview
 
+This project implements a line-following robot capable of detecting and following a path based on surface contrast while avoiding obstacles using distance sensing.  
+The goal is to demonstrate how sensor integration, PWM motor control, and decision-making logic can work together in small-scale robotics.
 
-## 📘 Overview
+The source code is divided into modular scripts (`code1`, `code2`, etc.) for different functionalities such as movement, sensors, and logic flow.
 
-This project consists of a **line-following robot** capable of navigating predefined paths based on visual contrast (black/white) and autonomously stopping or rerouting when obstacles are detected.  
-It was developed for educational and experimental purposes, focusing on **embedded systems**, **automation**, and **algorithmic control**.
+---
 
-The codebase is modular and well-organized, divided into logical sections for **motor control**, **sensor handling**, and **decision-making routines**.
+## Features
 
+- **Autonomous Navigation** — Follows black or white lines using IR sensors  
+- **Obstacle Detection** — Stops or adjusts path upon detecting an obstacle  
+- **PWM Motor Control** — Smooth and precise speed regulation  
+- **Modular Logic** — Separate scripts for sensors, motors, and decisions  
+- **Customizable Settings** — Adjust thresholds, speed, and distances  
+- **Educational & Open Source** — Ideal for learning embedded programming and robotics  
 
+---
 
-## ⚙️ Key Features
-
-- **Autonomous Line Tracking** — Follows black or white lines using infrared sensors  
-- **Obstacle Avoidance** — Detects and stops when an obstacle is near using an ultrasonic sensor  
-- **PWM Motor Control** — Smooth acceleration and directional precision  
-- **Modular Firmware** — Organized code structure with separated logic for movement and sensors  
-- **Adjustable Sensitivity** — Easily tune speed, detection range, and threshold values  
-- **Open Source & Extensible** — Built for experimentation and future robotics extensions  
-
-
-
-## 🧠 Hardware Components
+## Hardware Components
 
 | Component | Description |
 |------------|-------------|
 | **Arduino Uno / Mega** | Main microcontroller |
-| **L298N H-Bridge** | Motor driver for two DC motors |
-| **2x DC Motors** | Left and right traction motors |
-| **2x Infrared Sensors** | Line detection (black/white) |
+| **L298N H-Bridge** | Dual DC motor driver |
+| **DC Motors (x2)** | Left and right wheel control |
+| **Infrared Sensors (x2)** | Line tracking sensors |
 | **HC-SR04 Ultrasonic Sensor** | Obstacle detection |
-| **Power Supply** | 6–12V battery pack |
-| **Jumpers & Chassis** | Wiring and structure |
+| **Power Supply (6–12V)** | Battery pack |
+| **Chassis + Wiring** | Robot base and connections |
 
 ---
 
-## 🧩 Project Structure
+## Project Structure
 
-
+```
 
 📦 line-follower-robot
-├── firmware/
-│   ├── line_follower_basic/
-│   ├── line_follower_advanced/
-│   └── obstacle_avoidance/
+├── code1
+├── code2
+├── code3
 ├── docs/
 │   ├── wiring_diagram.png
-│   ├── component_list.md
-│   └── flowchart.md
-├── LICENSE
+│   └── notes.md
 ├── README.md
 └── .gitignore
 
 ````
 
+Each code file represents a logical module of the robot, such as:
+- **Sensor setup and calibration**
+- **Motor control routines**
+- **Main decision logic**
+- **Obstacle avoidance algorithm**
 
+---
 
-## 🚀 Setup & Usage
+## Setup & Execution
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -69,77 +71,64 @@ git clone https://github.com/cauerast/line-follower-robot.git
 cd line-follower-robot
 ````
 
-### 2️⃣ Open the Project in Arduino IDE
+### 2️⃣ Open in Arduino IDE
 
-* Navigate to `firmware/line_follower_basic/`
-* Select your Arduino board and COM port
-* Upload the code to your board
+* Load each `.ino` or `.cpp` file (`code1`, `code2`, etc.)
+* Select the correct Arduino board and COM port
+* Upload to your device
 
-### 3️⃣ Assemble the Circuit
+### 3️⃣ Hardware Assembly
 
-Follow the wiring diagram in the `/docs` folder.
-Make sure to correctly connect the **L298N module** to the motor and the **infrared sensors** to the analog pins defined in the firmware.
+Use the wiring diagram in the `/docs` folder.
+Ensure correct connections between sensors, motors, and the H-Bridge.
 
 ### 4️⃣ Run the Robot
 
-Place the robot on a track with a **black line over a white surface** (or vice versa).
-The robot will automatically start following the line and stop when an obstacle is detected.
+Place the robot on a surface with a clear line (black over white or vice versa).
+The system will automatically start following the line and respond to nearby obstacles.
 
 ---
 
-## 🧰 Configuration
+## Configuration
 
-You can customize:
+You can modify:
 
-* **Speed** via PWM value (default: 175)
-* **Detection distance** for the ultrasonic sensor (default: 175 mm)
-* **Sensor polarity** depending on line color (black or white)
+* **Speed** (default PWM: 175)
+* **Ultrasonic detection distance** (default: 175 mm)
+* **Sensor threshold** based on track brightness
 
-These values are defined in the `config.h` or directly in the main Arduino sketch.
-
-
-
-## 🔬 Experiments & Extensions
-
-You can extend this project by integrating:
-
-* **Bluetooth/Wi-Fi modules** for remote control
-* **PID control** for smoother and more accurate movement
-* **OLED display** for telemetry visualization
-* **MQTT or REST API** for IoT-based data monitoring
+These values can be adjusted in the main script or through defined constants.
 
 ---
 
-## 🧩 Educational Context
+## Educational Context
 
-This project was created as part of a **university robotics and automation study**, with a focus on applying theoretical knowledge in:
+Developed as part of a **university robotics and automation study**, this project aims to bridge theoretical learning and hands-on engineering practice through:
 
 * Embedded systems programming
-* Algorithmic control logic
-* Sensor integration
-* Real-time response systems
+* Real-time control algorithms
+* Sensor fusion and automation
+* Hardware/software integration
 
+---
 
-
-## 🧠 Author
+## Author
 
 **Cauê Silva Rasteiro**
-Software Developer & Automation Enthusiast
-📧 [cauerast@gmail.com](mailto:cauerast@gmail.com)
-🔗 [github.com/cauerast](https://github.com/cauerast) | [linkedin.com/in/cauerast](https://www.linkedin.com/in/cauerast/)
+Software Developer 
+- [cauerast@gmail.com](mailto:cauerast@gmail.com)
+- [github.com/cauerast](https://github.com/cauerast)
+- [linkedin.com/in/cauerast](https://www.linkedin.com/in/cauerast/)
 
-
+---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute it for educational or research purposes.
 
+---
 
+> *An open-source robotics project combining logic, hardware, and automation for experimentation and learning.*
 
-> *Developed as an academic open-source robotics project to inspire hands-on learning in automation, control systems, and AI-driven embedded applications.*
-
-```
-
-Deseja que eu adicione uma seção final tipo **“Performance & Testing”** (como em repositórios da Intel ou OpenVINO) com resultados de testes e sugestões de benchmarks (velocidade, precisão, curva, resposta a obstáculos)? Isso deixaria seu README com um tom ainda mais profissional e completo.
 ```
