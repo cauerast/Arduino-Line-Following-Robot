@@ -113,7 +113,7 @@ Developed as part of a **university robotics and automation study**, this projec
 ## Author
 
 **Cauê Silva Rasteiro**
-Software Developer 
+| Software Developer 
 - [cauerast@gmail.com](mailto:cauerast@gmail.com)
 - [github.com/cauerast](https://github.com/cauerast)
 - [linkedin.com/in/cauerast](https://www.linkedin.com/in/cauerast/)
