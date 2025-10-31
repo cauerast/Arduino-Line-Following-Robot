@@ -44,14 +44,13 @@ The source code is divided into modular scripts (`code1`, `code2`, etc.) for dif
 ```
 
 📦 line-follower-robot
-├── code1
-├── code2
-├── code3
+├── competition.cpp
+├── main.cpp
 ├── docs/
-│   ├── wiring_diagram.png
-│   └── notes.md
-├── README.md
-└── .gitignore
+│   ├── project-diagram.png
+│   └── project-diagram-op2.png
+├── LICENSE
+└── README.md
 
 ````
 
@@ -73,7 +72,7 @@ cd line-follower-robot
 
 ### 2️⃣ Open in Arduino IDE
 
-* Load each `.ino` or `.cpp` file (`code1`, `code2`, etc.)
+* Load each `.ino` or `.cpp` file
 * Select the correct Arduino board and COM port
 * Upload to your device
 
